@@ -71,11 +71,11 @@ class Student extends Person {
     constructor(name: string, age: number, grade: string) {
         super(name, age, grade);
     }
-    getDetails(): void {
-        console.log(`Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`);
+    getDetails(): string {
+        return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
     }
 }
 
 const student = new Student("Alice", 20, "A");
-student.getDetails();
+console.log(student.getDetails());
 
