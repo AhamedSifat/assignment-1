@@ -27,3 +27,11 @@ const value: string='typescript';
     return 'number';
     }
 console.log(checkType(stringOrNumber));
+
+//problem 4
+const user = { id: 1, name: "John Doe", age: 21 };
+const getProperty= <T, K extends keyof T> (obj: T, key: K) :T[K] => {
+    return obj[key];
+}
+console.log(getProperty(user, 'name'));
+
