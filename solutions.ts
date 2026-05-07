@@ -15,3 +15,15 @@ const value: string='typescript';
     return str.split('').reverse().join('');
  }
  console.log(reverseString(value));
+
+ //problem 3
+
+ const stringOrNumber: string | number = 'Hello';
+
+ const checkType = (input: string | number): string => {
+    if (typeof input === 'string') {
+        return 'string';
+    }
+    return 'number';
+    }
+console.log(checkType(stringOrNumber));
